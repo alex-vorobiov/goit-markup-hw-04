@@ -167,7 +167,23 @@ img {
 }
 
 .nav-contact {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
+    gap: 10px;
+}
+
+.nav-contact:hover .contact-box,
+.nav-contact:focus .contact-box {
+    fill: var(--accent-color);
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 /* Секція "герой" */
