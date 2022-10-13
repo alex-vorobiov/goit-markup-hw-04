@@ -24,6 +24,7 @@
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     --projects-border-color: #EEEEEE;
+    --icons-color: #AFB1B8;
 }
 
 body {
@@ -172,12 +173,24 @@ img {
 /* Секція "герой" */
 
 .hero-section {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     
     text-align: center;
 
     background-color: var(--secondary-bg-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -254,6 +267,17 @@ img {
     margin-left: 30px;
 }
 
+.benefits-picture {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: var(--section-bg-color);
+    border-radius: 4px;
+}
+
 .benefits-item-title {
     margin-bottom: 10px;
 
@@ -272,7 +296,8 @@ img {
 /* Секція "Чим займаємось", Секція "Наша команда" */
 
 .works-title,
-.team-title {
+.team-title,
+.clients-title {
     margin-bottom: 50px;
     text-align: center;
 
@@ -329,6 +354,38 @@ img {
     font-size: 16px;
     line-height: 1.18;
 }
+
+/* Секція Клієнти */
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    fill: var(--icons-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 
 /* Підвал сторінки */
 
