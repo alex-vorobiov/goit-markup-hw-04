@@ -119,8 +119,8 @@ img {
     color: var(--logo-black-color);
 }
 
-.logo-half-header:hover,
-.logo-half-header:focus {
+.logo:hover .logo-half-header,
+.logo:focus .logo-half-header {
     color: var(--accent-color);
 }
 
@@ -176,6 +176,7 @@ img {
     padding-bottom: 200px;
     
     text-align: center;
+
     background-color: var(--secondary-bg-color);
 }
 
@@ -353,8 +354,8 @@ img {
     color: var(--primary-white-color);
 }
 
-.logo-half-footer:hover,
-.logo-half-footer:focus {
+.logo-footer:hover .logo-half-footer,
+.logo-footer:focus .logo-half-footer {
     color: var(--accent-color);
 }
 
