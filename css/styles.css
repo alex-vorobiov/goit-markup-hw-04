@@ -25,6 +25,7 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
     --projects-border-color: #EEEEEE;
     --icons-color: #AFB1B8;
+    --footer-icons-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -411,6 +412,12 @@ img {
     background-color: var(--secondary-bg-color);
 }
 
+.footer-box {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
 .logo-footer {
     display: block;
     margin-bottom: 20px;
@@ -446,6 +453,52 @@ img {
 .address-contact {
     line-height: 1.71;
     color: var(--footer-text-color);
+}
+
+
+
+.invitation-text {
+    display: block;
+    margin-bottom: 20px;
+
+    
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: var(--primary-white-color);
+}
+
+.invitation-list {
+    display: flex;
+    gap: 10px;
+}
+
+.invitation-item {
+    width: 44px;
+    height: 44px;
+}
+
+.invitation-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    color: var(--primary-white-color);
+    background-color: var(--footer-icons-bg-color);
+    border-radius: 50%;
+}
+
+
+.social-icon {
+    fill: currentColor;
+}
+
+.invitation-link:hover,
+.invitation-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Сторінка портфоліо */
